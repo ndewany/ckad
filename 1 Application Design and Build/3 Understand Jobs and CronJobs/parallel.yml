@@ -4,10 +4,12 @@ metadata:
   name: parallel
 spec:
   backoffLimit: 4
+  parallelism: 2
+  completions: 3
   template:
     spec:
       restartPolicy: OnFailure
       containers:
       - name: ctr
         image: alpine:latest
-        command: ['sh', '-c', 'echo "Lets smash the CKAD" && sleep 25']
+        command: ['sh', '-c', 'echo "Lets smash the CKAD edited in Ubuntu" && sleep 25']

@@ -15,10 +15,13 @@ spec:
     spec:
       containers:
         - name: db
-          image: postgres
+          image: postgres:9.6.5
           envFrom:
             - configMapRef:
                 name: db-access
           ports:
             - containerPort: 5432
-
+        - name: db-admin
+          image: adminer
+          ports:
+            - containerPort: 8080

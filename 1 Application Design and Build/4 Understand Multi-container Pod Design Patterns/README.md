@@ -24,7 +24,7 @@ $ git clone https://github.com/nigelpoulton/ckad.git
 Run the following command to change into the correct directory. The tasks expect your terminal to be in this directory. If it isn't, the answers won't work.
 
 ```
-$ cd ckad/1\ Application\ Design\ and\ Build/3\ Understand\ Jobs\ and\ CronJobs/
+$ cd ckad/1\ Application\ Design\ and\ Build/4\ Understand\ Multi-container\ Pod\ Design\ Patterns/
 ```
 
 **NOTE:** This will set a very long working directory. If this bothers you (it bothers me) you can tell Linux just to display your current directory without the path by running this command. It will only change your prompt for your current shell session.
@@ -40,6 +40,8 @@ Answers to each task can be found in the `answers.md` file.
 ## Tasks
 
 ### Task 1
+
+Rado's comment : Do not forget to apply the db-configmap.yml
 
 The `be-deploy.yml` file defines a Deployment called "store-backend" that relies on a separate database.
 

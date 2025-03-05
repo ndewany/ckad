@@ -93,6 +93,3 @@ Run the following commands to terminate the existing CronJob and deploy the upda
 kubectl delete -f scheduled.yml
 kubectl apply -f scheduled.yml
 ```
-
-
-
